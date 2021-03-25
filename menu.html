@@ -1,22 +1,36 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
- <title>Mudando Action do Formulário</title>
- <!-- Script que Muda o Action -->
- <script type="text/javascript">
-  function mudarAction()
-  {
-   document.formulario.action = "pagina2.php";
-   document.formulario.submit();
-  }
- </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="image/CA3_icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Menu</title>
 </head>
-<body>
- <form id="formulario" name="formulario" method="post" action="pagina1.php">
-      <input id="txtnome" name="txtnome" type="text" />
-      
-    <input id="btnenviar1" name="btnenviar1" type="submit" value="Submeter para Primeira página" />
-      
-    <input id="btnenviar2" name="btnenviar2" type="button" value="Troca Action e Submete para a Segunda página" onClick="mudarAction()" />
- </form>
+<body class="bgMenu">
+    <div class="menuClass">
+        <h1>STARTERS</h1>
+        <ol></ol>
+        <ol></ol>
+        <ol></ol>
+        <ol></ol>
+        <h1>MAIN</h1>
+        <ol></ol>
+        <ol></ol>
+        <ol></ol>
+        <ol></ol>
+        <h1>DESSERTS</h1>
+        <ol></ol>
+        <ol></ol>
+        <ol></ol>
+        <ol></ol>
+        <h1>DRINKS</h1>
+        <ol></ol>
+        <ol></ol>
+        <ol></ol>
+        <ol></ol>
+    </div>
 </body>
 </html>
