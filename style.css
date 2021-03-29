@@ -76,12 +76,12 @@ form input[type=text]:hover, [type=password]:hover{
     color: rgb(92, 50, 30);
     size: 30px;
 }
-ol{
+tr{
     size: 10px;
     text-align: justify;
 
 }
-li{
+td{
     margin-top: 10px;
 }
 .footer{
@@ -104,4 +104,17 @@ ol#detail{
     margin-top: 4%;
     margin-right: 50px;
     font-weight: normal;
+}
+.tableMenu{
+    width: 450px;
+    border-style: solid;
+}
+td{
+    width: 30px;
+}
+.tdName{
+    width:250px;
+}
+.tdPrice{
+    width: 50px;
 }
