@@ -71,7 +71,7 @@ form input[type=text]:hover, [type=password]:hover{
     top: 3%;
     left: 3%;
 }
-h1#optionTitle{
+.optionTitle{
     text-align: justify;
     color: rgb(92, 50, 30);
     size: 30px;
@@ -100,7 +100,7 @@ ol#detail{
     font-weight: bolder;
     size: 30px;
 }
-li#descri{
+.descri{
     margin-top: 4%;
     margin-right: 50px;
     font-weight: normal;
