@@ -62,13 +62,28 @@ form input[type=text]:hover, [type=password]:hover{
     background-attachment: fixed;
 }
 .menuClass{
-    background-color: rgba(255, 255, 255, 0.705);
+    background-color: rgb(255, 255, 255);
     border-radius: 12px;
-    max-width: 600px;
-    width: 80%;
+    max-width: 500px;
+    min-width: 250px;
     position: absolute;
     padding: 25px;
-    top: 20%;
-    left: 18%;
-    transform: translate(-50%,-50%);
+    top: 3%;
+    left: 3%;
+}
+h1#optionTitle{
+    text-align: justify;
+    color: rgb(92, 50, 30);
+    size: 30px;
+}
+ol{
+    size: 10px;
+    text-align: justify;
+
+}
+li{
+    margin-top: 10px;
+}
+footer{
+    background-color: black;
 }
