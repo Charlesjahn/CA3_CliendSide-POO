@@ -1,9 +1,9 @@
 var ciclo = 0;
 
 function add1(){
-    let ciclo = ciclo + 1;
-    let valor = parseFloat(document.getElementById("p1").value.replace(",","."));
-    let total = valor;
+    var ciclo = ciclo + 1;
+    var valor = document.getElementById("p1").value;
+    var total = parseFloat(valor);
     alert(valor);
 }
 
