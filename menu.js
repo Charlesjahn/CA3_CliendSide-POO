@@ -12,6 +12,7 @@ function tableCreate() {
     var tbl = document.createElement('table');
     var tbdy = document.createElement('tbody');
     
+    tbl.setAttribute('border', '0');
     
 
     var ciclo = 0;
@@ -37,14 +38,17 @@ function tableCreate() {
                 ciclo++;
                 
               case 2:
-                j == 2 ? td.appendChild(document.createTextNode(ciclo)): null;
+                j == 2 ? td.appendChild(document.createTextNode(ciclo +":")): null;
+                j == 2 ? td.setAttribute('class','optionNum'): null;
                 
               case 3:
                 j == 3 ? td.appendChild(document.createTextNode(options[ciclo-1])): null;
+                j == 3 ? td.setAttribute('class','optionDish'): null;
               case 5:
                 j == 5 ? td.appendChild(document.createTextNode("€")): null;
               case 6:
                 j == 6 ? td.appendChild(document.createTextNode(price[ciclo-1])): null;
+                j == 6 ? td.setAttribute('id','price'): null;
               
                 break;
               default:
@@ -63,7 +67,7 @@ function tableCreate() {
   }tableCreate();
 
   function add(){
-  
-    alert("hi");
+    var option = getElementsById("price");
+    alert(option);
   } ;
   
