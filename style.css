@@ -75,7 +75,7 @@ form input[type=text]:hover, [type=password]:hover{
 .optionTitle{
     text-align: justify;
     color: rgb(92, 50, 30);
-    size: 30px;
+    size: 150px;
 }
 tr{
     size: 10px;
@@ -94,7 +94,7 @@ td{
     width: 50px;
     text-align: justify;
 }
-/*Css for footer on menu page */
+/*CSS for footer on menu page */
 footer{
     background-image: url(image/footer_full.jpg);
     background-size: cover;
@@ -116,4 +116,16 @@ ol#detail{
     margin-top: 4%;
     margin-right: 50px;
     font-weight: normal;
+}
+/* CSS fo buttons*/
+.button{
+    font-size: .8em;
+    background-color: aqua;
+    border: 0;
+    margin-bottom: 1em;
+    padding: 0.2em 0.6em;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+    text-align: center;
+    justify-content: center;
 }

@@ -1,0 +1,133 @@
+
+        <table class="tableMenu" border="0">
+
+            <tr>
+                <td colspan="7"> <h1 class="optionTitle">STARTERS</h1>
+                </td>
+            </tr>
+
+                <tr>
+                    <td><button onclick="add()" id="b1"> Add </button></td>
+                    <td>01</td>
+                    <td class="tdName"> Mixed Salads</td>
+                    <td class="tdImag"><img src="image/vegan.png"></td>
+                    <td>€</td>
+                    <td id="p1">2,00</td>
+                    <td><i>(dish)</i></td>  
+                </tr>
+
+
+
+                <tr>
+                    <td><button onclick="add2()"> Add </button></td>
+                    <td>02</td>
+                    <td>Coked eggs </td>
+                    <td><img src="image/eggs.png" ></td>
+                    <td>€</td>
+                    <td id="2">0,30</td> 
+                    <td> <i>(each)</i></td>
+                </tr>
+                <tr>
+                    <td><button onclick="add3()"> Add </button></td>
+                    <td>03</td>
+                    <td>French fries/Chips</td>
+                    <td><img src="image/vegan.png"></td>
+                    <td>€</td>
+                    <td id="3">3,00</td>
+                    <td> <i>(portion)</i></td>
+                    
+                </tr>
+
+            <tr>
+                <td colspan="7"> <h1 class="optionTitle">MAIN</h1>
+                </td>
+            </tr>
+                <tr>
+                    <td><button onclick="add4()"> Add </button></td>
+                    <td>04</td>
+                    <td>A la Minute</td>
+                    <td><img src="image/eggs.png"></td>
+                    <td>€</td>
+                    <td id="4">10,30</td>
+                    <td> <i>(dish)</i></td>
+                </tr>
+                <tr>
+                    <td><button onclick="add5()"> Add </button></td>
+                    <td>05</td>
+                    <td>Chicken Risotto </td>
+                    <td><img src="image/chiken.png"> <img src="image/eggs.png"></td>
+                    <td>€</td>
+                    <td id="5">8,00</td>
+                    <td> <i>(dish)</i></td>  
+                </tr>
+                <tr>
+                    <td><button onclick="add6()"> Add </button></td>
+                    <td>06</td>
+                    <td>Stroganoff Of Soy</td>
+                    <td><img src="image/vegan.png"></td>
+                    <td>€</td>
+                    <td id="6">12,00</td>
+                    <td> <i>(dish)</i></td>
+                </tr>
+
+            <tr>
+                <td colspan="7"> <h1 class="optionTitle">DESSERTS</h1>
+                </td>
+            </tr>
+                <tr>
+                    <td><button onclick="add7()"> Add </button></td>
+                    <td>07</td>
+                    <td>Fruit Salad</td>
+                    <td><img src="image/vegan.png"></td>
+                    <td>€</td>
+                    <td id="7">3,50</td>
+                    <td> <i>(portion)</i></td>
+                </tr>
+                <tr>
+                    <td><button onclick="add8()"> Add </button></td>
+                    <td>08</td>
+                    <td>Sweet Pudim </td>
+                    <td><img src="image/milk.png"> <img src="image/eggs.png"></td>
+                    <td>€</td>
+                    <td id="8">4,00</td>
+                    <td> <i>(portion)</i></td>  
+                </tr>
+                <tr>
+                    <td><button onclick="add9()"> Add </button></td>
+                    <td>09</td>
+                    <td>Sweet Rise</td>
+                    <td><img src="image/milk.png"></td>
+                    <td>€</td>
+                    <td id="9">3,00</td>
+                    <td> <i>(portion)</i></td>
+                </tr>
+
+            <tr>
+                <td colspan="7"> <h1 class="optionTitle">DRINKS</h1>
+                </td>
+            </tr>
+                <tr>
+                    <td><button onclick="add10()"> Add </button></td>
+                    <td>10</td>
+                    <td colspan="2">Hot Drinks<i>(hot chocolate, coffe & tea)</i></td>
+                    <td>€</td>
+                    <td id="10" >3,50</td>
+                    <td> <i>(cup)</i></td>
+                </tr>
+                <tr>
+                    <td><button onclick="add11()"> Add </button></td>
+                    <td>11</td>
+                    <td colspan="2">Soft Drinks <i>(Coke,Fanta,7up & Sprite)</td>
+                    <td>€</td>
+                    <td id="11">2,50</td>
+                    <td> <i>(each)</i></td>  
+                </tr>
+                <tr>
+                    <td><button onclick="add12()"> Add </button></td>
+                    <td>12</td>
+                    <td colspan="2">Glass of wine <i>(Pinot, Merlot & Cabernet)</td>
+                    <td>€</td>
+                    <td id="12">5,00</td>
+                    <td> <i>(each)</i></td>
+                </tr>
+        </table>

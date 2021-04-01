@@ -1,81 +1,69 @@
-var ciclo = 0;
+function tableCreate() {
 
-function add1(){
-    var ciclo = ciclo + 1;
-    var valor = document.getElementById("p1").value;
-    var total = parseFloat(valor);
-    alert(valor);
-}
+    //Array for topic of options
+    let tipo = ["STARTERS","MAIN","DESERTS","DRINK"]
+    //Array for list of option
+    let options =["Mixed Salads","Coked eggs","French fries/Chips","A la Minute","Chicken Risotto","Stroganoff Of Soy","Fruit Salad","Sweet Pudim","Sweet Rise","Hot Drinks (hot chocolate, coffe & tea)","Soft Drinks (Coke,Fanta,7up & Sprite)","Glass of wine (Pinot, Merlot & Cabernet)"]
+    //Array for prices
+    let price = ["2,00","0,30","3,50","10,30","8,50","12,00","3,50","4,00","3,00","3,50","2,50","5,50",]
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-function add2(){
-    var ciclo  = ciclo + 1;
-    var valor = document.getElementById("2");
+    var buttonAdd = document.createElement("buttom");
+    var div = document.getElementsByTagName('div')[0];
+    var tbl = document.createElement('table');
+    var tbdy = document.createElement('tbody');
     
-}
-function add3(){
-    var ciclo  = ciclo + 1;
-    var valor = document.getElementById("3");
     
-}
-function add4(){
-    var ciclo  = ciclo + 1;
-    var valor = document.getElementById("4");
-    
-}
-function add5(){
-    var ciclo  = ciclo + 1;
-    var valor = document.getElementById("5");
-    
-}
-function add6(){
-    var ciclo  = ciclo + 1;
-    var valor = document.getElementById("6");
-    
-}
-function add7(){
-    var ciclo  = ciclo + 1;
-    var valor = document.getElementById("7");
-    
-}
-function add8(){
-    var ciclo  = ciclo + 1;
-    var valor = document.getElementById("8");
-    
-}
-function add9(){
-    var ciclo  = ciclo + 1;
-    var valor = document.getElementById("9");
-    
-}
-function add10(){
-    var ciclo  = ciclo + 1;
-    var valor = document.getElementById("10");
-    
-}
-function add11(){
-    var ciclo  = ciclo + 1;
-    var valor = document.getElementById("11");
-    
-}
-function add12(){
-    var ciclo  = ciclo + 1;
-    var valor = document.getElementById("12");
-    
-}
+
+    var ciclo = 0;
+    for(var x = 0; x < 4; x++){
+      for (var i = 0; i < 4; i++) {
+        var tr = document.createElement('tr');
+        for (var j = 0; j < 7; j++) {
+          if (i == 0 && j == 1 ) {
+              i == 0 && j == 1 ? td.setAttribute('colSpan', '7') : null;
+              td.setAttribute('class','optionTitle');
+              td.appendChild(document.createTextNode(tipo[x]))
+              
+            break
+          } else{
+            switch(j) {
+              case 1:
+                var button = document.createElement('button');
+                button.setAttribute('type','button');
+                button.setAttribute('class','button');
+                button.onclick = function() {add();}
+                j == 1 ? button.appendChild(document.createTextNode('ADD')): null;
+                j == 1 ? td.appendChild(button): null;
+                ciclo++;
+                
+              case 2:
+                j == 2 ? td.appendChild(document.createTextNode(ciclo)): null;
+                
+              case 3:
+                j == 3 ? td.appendChild(document.createTextNode(options[ciclo-1])): null;
+              case 5:
+                j == 5 ? td.appendChild(document.createTextNode("€")): null;
+              case 6:
+                j == 6 ? td.appendChild(document.createTextNode(price[ciclo-1])): null;
+              
+                break;
+              default:
+                // code block
+                
+            }
+            var td = document.createElement('td');
+            tr.appendChild(td)
+          }
+        }
+        tbdy.appendChild(tr);
+      }
+    }
+    tbl.appendChild(tbdy);
+    div.appendChild(tbl)
+  }tableCreate();
+
+  function add(){
+  
+    alert("hi");
+  } ;
+  
