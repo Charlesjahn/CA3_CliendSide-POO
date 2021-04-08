@@ -31,8 +31,8 @@
                 button.setAttribute('type','button');
                 button.setAttribute('class','button');
 
-                button.onclick = function() {add();}
-                
+                button.onclick = function(){add();}
+
                 j == 1 ? button.appendChild(document.createTextNode('ADD')): null;
                 j == 1 ? td.appendChild(button): null;
                 ciclo++;
@@ -64,7 +64,6 @@
   })();
   
   function add(){
-    let option = document.getElementsById("price");
     alert("Item added");
   } ;
   
