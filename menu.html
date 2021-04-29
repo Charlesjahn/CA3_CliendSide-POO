@@ -7,19 +7,39 @@
     <link rel="shortcut icon" href="image/CA3_icon.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <title>Menu</title>
+    <script src="customer.js"></script> <!--JS for ramdon user -->
 
 </head>
 <body class="bgMenu">
     <div class="menuClass">
-        
+        <!-- Menu will be create  here--> 
         
     </div>
-    <div class="Total">
 
+    <div id="output">
+    <button onclick="getUser()" id=""> tests</button>
+    
+    </div>
+
+
+
+    <div class="total" id="total">
+        <h1>Order</h1>
+        <p id="pTotal">
+            <!-- all the dishes that was ordered will appear here --> 
+        </p>
+        <table id="tblTotal">
+            <tr>
+                <td id="totalprice">€ 0.00</td> <!-- Total price to pay --> 
+                <td>:</td>
+                <td> <b>Total</b> </td>
+            </tr>
+        </table>
     </div>
     
     <script src="menu.js"></script>
     <footer>
+        <!--Description of each simbol -->
         <ol id="detail">Descriptions
             <li class="descri"><img src="image/beaf.png" >Beaf</li>
             <li class="descri"><img src="image/chiken.png">Chicken </li>
@@ -29,7 +49,4 @@
         </ol>
     </footer>
 </body>
-
-
-
 </html>

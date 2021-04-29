@@ -5,17 +5,17 @@ var tipo = ["STARTERS", "MAIN", "DESERTS", "DRINK"];
 var options = ["Mixed Salads", "Coked eggs", "French fries/Chips", "A la Minute", "Chicken Risotto", "Stroganoff Of Soy", "Fruit Salad", "Sweet Pudim", "Sweet Rise", "Hot Drinks (hot chocolate, coffe & tea)", "Soft Drinks (Coke,Fanta,7up & Sprite)", "Glass of wine (Pinot, Merlot & Cabernet)"];
 
 //Array for prices
-var price = ["2,00", "0,30", "3,50", "10,30", "8,50", "12,00", "3,50", "4,00", "3,00", "3,50", "2,50", "5,50",];
+var price = [" 2.00", "0.30", "3.50", "10.30", "8.50", "12.00", "3.50", "4.00", "3.00", "3.50", "2.50", "5.50",];
+
 
 var sum = 0;
+var ciclo = 0;
 
 (function () {
-  var buttonAdd = document.createElement("buttom");
   var div = document.getElementsByTagName('div')[0];
-  var tbl = document.createElement('table');
-  var tbdy = document.createElement('tbody');
+  let tbl = document.createElement('table');
+  let tbdy = document.createElement('tbody');
 
-  var ciclo = 0;
   let buttoms = [];
 
   for (var x = 0; x < 4; x++) {
@@ -37,11 +37,11 @@ var sum = 0;
             case 1:
               buttoms[ciclo] = document.createElement('button');
               buttoms[ciclo].setAttribute('type', 'button');
-              buttoms[ciclo].setAttribute('class', 'button');
-              buttoms[ciclo].setAttribute('id', 'button' + (ciclo+1));
+              buttoms[ciclo].setAttribute('class', 'buttonAdd');
+              buttoms[ciclo].setAttribute('id', 'buttonAdd' + (ciclo+1));
               buttoms[ciclo].onclick = (function (ciclo) { return function() {add(ciclo);} }) (ciclo);
 
-              j == 1 ? buttoms[ciclo].appendChild(document.createTextNode('ADD')) : null;
+              j == 1 ? buttoms[ciclo].appendChild(document.createTextNode('+ Add')) : null;
               j == 1 ? td.appendChild(buttoms[ciclo]) : null;
               ciclo++;
               break;
@@ -77,9 +77,23 @@ var sum = 0;
 })();
 
 function add(i) {
+
+  let orders = options[i];
+  var div = document.getElementById('pTotal').innerHTML;
+
   
+  if (sum == 0){
+    document.getElementById('pTotal').innerHTML ="€" + price[i] + " = "+orders;
+  }else{
+    
+    div += "<br>" + "€" + price[i] +" = "+ orders;
+    document.getElementById('pTotal').innerHTML = div;
+  }
+
+
+
+
   sum += parseFloat(price[i]);
 
-  alert(sum);
-
+  document.getElementById("totalprice").innerHTML = "€" + sum.toFixed(2);
 };

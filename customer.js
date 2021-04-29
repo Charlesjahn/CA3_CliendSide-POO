@@ -1,4 +1,4 @@
-async function getJSON(){
+(async function getJSON(){
     //getting the information from the website
     const response = await fetch(
         "https://randomuser.me/api/?results=5"
@@ -16,4 +16,4 @@ async function getJSON(){
 
     }
     return customers;
-}
+})();
