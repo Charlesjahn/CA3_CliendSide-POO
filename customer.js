@@ -14,7 +14,7 @@ async function getUser() {
       // pode usar 5 ou quantos tu pegar no json
   
       users += // adiciona as informacoes a variavel users q vai ser usada pra mostrar no site
-        json.results[i].picture.medium.url="https://randomuser.me/api/portraits/med/women/55.jpg" + "<br>"+
+        json.results[i].picture.medium.href="https://randomuser.me/api/portraits/med/women/55.jpg" + "<br>"+
         "Customer: " +
         json.results[i].name.title +". " + json.results[i].name.first +" "+ json.results[i].name.last +
         "<br>Customer Code: " +
