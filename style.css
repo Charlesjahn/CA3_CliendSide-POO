@@ -1,8 +1,10 @@
-
 body,html{
     height: 100%;
     margin: 0;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#container{
+    width: 100%;
 }
 /*CSS for login page */
 .bgPass{ 
@@ -22,6 +24,7 @@ body,html{
     left: 50%;
     transform: translate(-50%,-50%);
     border-radius: 30px;
+    
 }
 h1#loginh1{
     text-align: center;
@@ -57,37 +60,52 @@ form input[type=text]:hover, [type=password]:hover{
     color: red;
 }
 /*CSS for menu page*/
-.bgMenu{
+.bgMenu{/* back-ground for Menu page*/
     background-image: url("image/Background_full_menu.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     margin-bottom: 55px;
-}/* back-ground for Menu page*/
-.menuClass{
+}
+
+.menuClass{/*CSS for Div menu*/
+    float: left;
+    width: 400%;
     background-color: rgb(255, 255, 255);
     border-radius: 12px;
     max-width: 500px;
     min-width: 250px;
-    position: sticky;
     padding: 25px;
-    top: 3%;
-    left: 3%;
-    bottom: 1%;
+    margin: 15px;
 }
-/*CSS fot total to pay*/
-.total{
-    background-color: whitesmoke;
+
+.total{/*CSS for Div total to pay*/
+    float: left;
+    width: 200%;
+    background-color: rgb(187, 187, 187);
     max-width: 400px;
     min-height: 100px;
-    position: sticky;
-    bottom: 50%;
-    left: 77%;
-    border-radius: 10px;
+    border-radius: 25px;
+    margin: 15px;
 }
 p, #tblTotal, h1{
     margin: 15px;
+}
+
+.ramdonUserDiv{/*CSS for Div Ramdon user */
+    float: right;
+    width: 400%;
+    margin: 15px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 12px;
+    max-width: 500px;
+    min-width: 250px;
+    padding: 25px;
+}
+#ramdonUser{
+    color: black;
+    font-size: large;
 }
 /*CSS for Table on menu page*/
 .optionTitle, h1{
@@ -131,8 +149,9 @@ ol#detail{
     margin-right: 50px;
     font-weight: normal;
 }
+
 /* CSS for buttons*/
-#login{
+#login, #userShow{
     font-size: .9em;
     background-color: black;
     color: white;
@@ -145,6 +164,10 @@ ol#detail{
     text-align: center;
     justify-content: center;
     border-radius: 6px;
+}
+#userShow{
+    margin: .3em;
+    font-size: 1.3em;
 }
 .buttonAdd{
     background-color: black;
@@ -159,7 +182,7 @@ ol#detail{
     justify-content: center;
     border-radius: 6px;
 }
-#login:hover, .buttonAdd:hover{
+#login:hover, .buttonAdd:hover, #userShow:hover{
 
     background-color: rgb(180, 179, 179);
     color: blue;

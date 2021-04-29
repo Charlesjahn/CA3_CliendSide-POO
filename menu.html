@@ -7,36 +7,41 @@
     <link rel="shortcut icon" href="image/CA3_icon.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <title>Menu</title>
+    
+        
     <script src="customer.js"></script> <!--JS for ramdon user -->
 
 </head>
 <body class="bgMenu">
-    <div class="menuClass">
-        <!-- Menu will be create  here--> 
+    <div id=container> <!-- This Div is just to make the other div be align-->
         
+        <div class="menuClass" id="menuClassDiv">
+            <!-- Menu will be create  here--> 
+            
+        </div>
+
+        <div class="total" id="total">
+            <h1>Order</h1>
+            <p id="pTotal">
+                <!-- all the dishes that was ordered will appear here --> 
+            </p>
+            <table id="tblTotal">
+                <tr>
+                    <td id="totalprice">€ 0.00</td> <!-- Total price to pay --> 
+                    <td>:</td>
+                    <td> <b>Total</b> </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="ramdonUserDiv">
+
+            <button onclick="getUser()" id="userShow"> Show Customers</button>
+            <span id="ramdonUser"><br> <!--User will appear here--> </span>
+            <span><a href="">Click here </a> to check go to github!</span>
+        </div>
+
     </div>
-
-    <div id="output">
-    <button onclick="getUser()" id=""> tests</button>
-    
-    </div>
-
-
-
-    <div class="total" id="total">
-        <h1>Order</h1>
-        <p id="pTotal">
-            <!-- all the dishes that was ordered will appear here --> 
-        </p>
-        <table id="tblTotal">
-            <tr>
-                <td id="totalprice">€ 0.00</td> <!-- Total price to pay --> 
-                <td>:</td>
-                <td> <b>Total</b> </td>
-            </tr>
-        </table>
-    </div>
-    
     <script src="menu.js"></script>
     <footer>
         <!--Description of each simbol -->

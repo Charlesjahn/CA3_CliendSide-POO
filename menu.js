@@ -12,7 +12,7 @@ var sum = 0;
 var ciclo = 0;
 
 (function () {
-  var div = document.getElementsByTagName('div')[0];
+  var div = document.getElementById('menuClassDiv');
   let tbl = document.createElement('table');
   let tbdy = document.createElement('tbody');
 
