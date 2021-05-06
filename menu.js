@@ -95,13 +95,13 @@ function add(i) { // function to ADD, it will receive a number of VAR Ciclo
 
   sum += parseFloat(price[i]); // add the valor of the order
 
-  document.getElementById("totalprice").innerHTML = "€" + sum.toFixed(2); // it will print the option that the sustomer is requesting
+  document.getElementById("totalprice").innerHTML = "€ " + sum.toFixed(2); // it will print the option that the sustomer is requesting
 };
 
 function newOrder(){ // function reset the order, or create a new one
   sum = 0;
   document.getElementById('pTotal').innerHTML = "";
-  document.getElementById("totalprice").innerHTML = "€" + sum.toFixed(2);
+  document.getElementById("totalprice").innerHTML = "€ " + sum.toFixed(2);
 }
 
 (function addImage(){ // it will put the image on witch dish
