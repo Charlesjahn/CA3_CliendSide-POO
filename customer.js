@@ -1,27 +1,31 @@
 async function getUser() {
     const response = await fetch(
-      // pega o que tiver no site e guarda como response
+      // get what have on web site and save as response
       "https://randomuser.me/api/?results=5 & ?nat=br,us,fr,es"
-    ).catch((err) => console.log(err)); // mostra o erro se tiver algum
+    ).catch((err) => console.log(err)); // show if is there a error
   
     const json = await response
-      .json() // pega a resposta do site em forma de JSON
-      .catch((err) => console.log(err)); // mostra o erro se tiver algum
+      .json() // take the reponse and make a JSON
+      .catch((err) => console.log(err)); // show if is there a error
   
-    var users = "<br>"; // inicia a variavel users pra mostrar no site os usuarios criados pelo API
+    var users = "<br>"; // //initiates a variablel to show the user API
   
     for (var i = 0; i < json.results.length; i++) {
-      // pode usar 5 ou quantos tu pegar no json
+      // it will loop for the quantity of user there is on json
   
-      users += // adiciona as informacoes a variavel users q vai ser usada pra mostrar no site
-        json.results[i].picture.medium.href="https://randomuser.me/api/portraits/med/women/55.jpg" + "<br>"+
-        "Customer: " +
+      users += // it will get the information from the json 
         json.results[i].name.title +". " + json.results[i].name.first +" "+ json.results[i].name.last +
-        "<br>Customer Code: " +
-        json.results[i].location.postcode +
+        "<br><img src='" + json.results[i].picture.medium +
+        "'>" +
+        "<br>E-mail: " + json.results[i].email +
+        "<br>Phone number: " + json.results[i].phone +
+        "<br>Age: " + json.results[i].dob.age +
+        "<br>City: " + json.results[i].location.city +
+        "<br>Country: " + json.results[i].location.country +
+        "<br>PostCode: " + json.results[i].location.postcode +
         "<hr>";
     }
   
-    document.getElementById("ramdonUser").innerHTML = users; // mostra a variavel users no site
+    document.getElementById("ramdonUser").innerHTML = users; // input the user on website
 }
   
